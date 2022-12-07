@@ -49,39 +49,35 @@
 }
 /*--#this is my end header section using internal styling in html--*/
 
-.form-container{
-    background-color:  rgb(39, 119, 53);
-    margin-top: 0;
-    padding-top: 0;
-    width: 70%;
-    margin-left: 15%;
-}
-.form-container form{
-margin: 5%;
-font-size: 20px;
-}
-#button{
-    background-color: green;
-    border: 1px solid green;
-    color: #fff;
-} 
-input{
-    width: 100px;
-    padding: 12px;
-    border:0px solid;
-    border-radius: 5px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-        
-.map{
-   padding:0 20px;
-   margin-top: 0%;
-   width: 100%;
+
+.form-content {
+    width:50%;
+    margin: auto;
 }
 
+form {
+    background-color: rgb(121, 148, 81);
+    padding: 20px;
+    
+}
+
+input, textarea {
+    width: 95%;
+    height: 30px;
+    border: 0px;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+textarea {
+    height: 60px;
+}
+
+.submit {
+    background-color: rgb(7, 106, 73);
+    color: #fff;
+}
 
 
 
@@ -104,14 +100,11 @@ input{
        
    </div>
 
-   <div class="form-container">
-      <form method="get">
-            <div class="form-h">
+   <div class="form-content">
+      <form method="post">
                <h1>Get In Touch</h1>
-               <h2>Use the contact form below to get in touch</h2>
-            </div>
-   
-            <div class="form-content">
+               <p><strong>  Use the contact form below to get in touch </strong></p>
+         
                <label for="name">NAME:</label><br>
                <input type="text"  placeholder="Your name" id="name"><br><br>
         
@@ -124,8 +117,8 @@ input{
                <label for="subject">SUBJECT:</label><br>
                <input type="text"  placeholder="I just want to say hello" id="subject"><br><br>
     
-               <label for="message">MESSAGE:</label><br>
-               <input type="text"  placeholder="Write your message here, please."id="message"><br><br>
+                <label for="message">MESSAGE:</label><br>
+              <textarea name="message" id="message" cols="30" rows="2" placeholder="Write your message here, please."></textarea><br><br>
     
                <input type="submit" value="Send away" id="button"><br><br>
           </div>
