@@ -50,7 +50,7 @@
 /*--#this is my end header section using internal styling in html--*/
 
 .form-container{
-    background-color: rgb(57, 131, 101);
+    background-color:  rgb(39, 119, 53);
     margin-top: 0;
     padding-top: 0;
     width: 70%;
@@ -60,15 +60,22 @@
 margin: 5%;
 font-size: 20px;
 }
-.form-content input{
-   padding: 15px;
-   width: 90%;
-   
-}
 #button{
     background-color: green;
+    border: 1px solid green;
+    color: #fff;
 } 
-
+input{
+    width: 100px;
+    padding: 12px;
+    border:0px solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+        
 .map{
    padding:0 20px;
    margin-top: 0%;
@@ -106,21 +113,21 @@ font-size: 20px;
    
             <div class="form-content">
                <label for="name">NAME:</label><br>
-               <input type="text"  placeholder="Your name" id="name"><br>
+               <input type="text"  placeholder="Your name" id="name"><br><br>
         
                <label for="email">EMAIL ADDRESS:</label><br>
-               <input type="email"  placeholder="your@email.com" id="email"><br>
+               <input type="email"  placeholder="your@email.com" id="email"><br><br>
     
                <label for="website">WEBSITE:</label><br>
-               <input type="text"  placeholder="" id="website"><br>
+               <input type="text"  placeholder="" id="website"><br><br>
     
                <label for="subject">SUBJECT:</label><br>
-               <input type="text"  placeholder="I just want to say hello" id="subject"><br>
+               <input type="text"  placeholder="I just want to say hello" id="subject"><br><br>
     
                <label for="message">MESSAGE:</label><br>
-               <input type="text"  placeholder="Write your message here, please."       id="message"><br>
+               <input type="text"  placeholder="Write your message here, please."id="message"><br><br>
     
-               <input type="button" value="Send away" id="button"><br><br>
+               <input type="submit" value="Send away" id="button"><br><br>
           </div>
       </form>
  </div>
