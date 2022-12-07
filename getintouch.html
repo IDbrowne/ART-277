@@ -50,37 +50,44 @@
 /*--#this is my end header section using internal styling in html--*/
 
 
-.form-content {
-    width:50%;
-    margin: auto;
-}
 
-form {
-    background-color: rgb(121, 148, 81);
-    padding: 20px;
-    
+.form-container{
+    background-color: rgb(39, 119, 53);
+    margin-top: 0;
+    padding-top: 0;
+    width: 70%;
+    margin-left: 15%;
 }
-
-input, textarea {
-    width: 95%;
-    height: 30px;
-    border: 0px;
-    border-radius: 10px;
-    margin-top: 5px;
-    padding: 10px;
+.form-container form{
+margin: 5%;
+font-size: 20px;
 }
-
-textarea {
-    height: 60px;
+.form-content input{
+   padding: 15px;
+   width: 90%;
+   
 }
-
-.submit {
-    background-color: rgb(7, 106, 73);
+#button{
+    background-color: green;
+    border: 1px solid green;
     color: #fff;
+} 
+
+.map{
+   padding:0 20px;
+   margin-top: 0%;
+   width: 100%;
 }
-
-
-
+input{
+    width: 100px;
+    padding: 12px;
+    border:0px solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
 </style>
 </head>
 <body>
@@ -100,11 +107,13 @@ textarea {
        
    </div>
 
-   <div class="form-content">
+   <div class="form-container">
       <form method="post">
+          <div class="form-h">
                <h1>Get In Touch</h1>
                <p><strong>  Use the contact form below to get in touch </strong></p>
-         
+         </div>
+          <div class="form-h">
                <label for="name">NAME:</label><br>
                <input type="text"  placeholder="Your name" id="name"><br><br>
         
@@ -121,6 +130,7 @@ textarea {
               <textarea name="message" id="message" cols="30" rows="2" placeholder="Write your message here, please."></textarea><br><br>
     
                <input type="submit" value="Send away" id="button"><br><br>
+              </div>
           </div>
       </form>
  </div>
